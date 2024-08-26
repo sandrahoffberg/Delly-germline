@@ -1,0 +1,22 @@
+
+Usage: delly merge [OPTIONS] [<sample1.bcf> <sample2.bcf> ... | <list_of_bcf_files.txt>]
+
+Generic options:
+  -? [ --help ]                         show help message
+  -o [ --outfile ] arg                  Merged SV BCF output file
+  -y [ --quality ] arg (=300)           min. SV site quality
+  -u [ --chunks ] arg (=500)            max. chunk size to merge groups of BCF 
+                                        files
+  -a [ --vaf ] arg (=0.150000006)       min. fractional ALT support
+  -v [ --coverage ] arg (=10)           min. coverage
+  -m [ --minsize ] arg (=0)             min. SV size
+  -n [ --maxsize ] arg (=1000000)       max. SV size
+  -e [ --cnvmode ]                      Merge delly CNV files
+  -c [ --precise ]                      Filter sites for PRECISE
+  -p [ --pass ]                         Filter sites for PASS
+
+Overlap options:
+  -b [ --bp-offset ] arg (=1000)        max. breakpoint offset
+  -r [ --rec-overlap ] arg (=0.800000012)
+                                        min. reciprocal overlap
+
